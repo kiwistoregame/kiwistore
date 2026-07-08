@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: -1;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 25px;
+}
+
+.card {
+  background: rgba(0, 80, 40, 0.7);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(8px);
+}
+
+h1 {
+  text-align: center;
+  color: #00ff88;
+}
+
+button, a {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 15px;
+  background: #00aa55;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  transform: scale(1.05);
+  background: #00ff88;
+  color: black;
+}
